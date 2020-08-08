@@ -1,7 +1,13 @@
+
+data = {
+  name: "hisham",
+  status: "programmer"
+}
+
 module.exports = (app)=>{
   // index route
 app.get('/', (req,res)=>{
-  res.render('home')
+  res.render('home', {data:data})
 })
 
 // about route
