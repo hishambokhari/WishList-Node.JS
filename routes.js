@@ -1,5 +1,5 @@
 
-data = {
+var data = {
   name: "hisham",
   status: "programmer"
 }
@@ -13,8 +13,9 @@ app.get('/', (req,res)=>{
 // about route
 
 app.get('/about', (req,res)=>{
-  res.send("About route")
+  res.render("About")
 })
+
 }
 
 

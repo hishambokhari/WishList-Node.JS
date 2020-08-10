@@ -11,9 +11,7 @@ require('./routes')(app);
 
 app.set('view engine', 'ejs')
 
-app.get('/profile/:id',(req,res)=>{
-  res.send('You requested user number ' + req.params.id)
-})
+
 
 app.listen(port, ()=>{
   console.log("Server is running on port " + port)
